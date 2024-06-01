@@ -28,7 +28,7 @@ const patientSchema = new mongoose.Schema({
  },
  AdmittedIn:{
     type: mongoose.Schema.Types.ObjectId,
-    ref:"doctor"
+    ref:"hospital"
  }
 },{
     timestamps: true

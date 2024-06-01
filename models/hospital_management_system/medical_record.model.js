@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const medicalrecordSchema = new mongoose.Schema({
-
+    
 },{
     timestamps: true
 });
