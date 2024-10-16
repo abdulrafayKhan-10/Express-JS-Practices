@@ -4,9 +4,12 @@ const jwt = require("jsonwebtoken")
 
 const prodGet = async (req, res) => {
     try {
+        
         const response = await fetch(process.env.PRODUCT_API);
+        
         const products = await response.json();
-            return res.send(products); 
+
+        return res.send(products); 
                 
     } catch (error) {
 
@@ -19,13 +22,17 @@ const prodGet = async (req, res) => {
 // @method : POST
 const prodPost = async (req, res) => {
     try {
-        const { product_name, product_description, product_price, product_category } = req.body;
+        const { product_unique_key, product_name, product_description, product_price, product_category } = req.body;
 
         // Trim inputs to remove unnecessary whitespace
+
+        const checkProductId  = product_unique_key.trim() ?? null;
         const checkProductName = product_name?.trim() ?? null;
         const checkProductDescription = product_description?.trim() ?? null;
         const checkProductPrice = product_price ?? null; // This will be validated later
         const checkProductCategory = product_category?.trim() ?? null;
+
+        const Hashed_Productid = bcrypt.hashSync(checkProductId, 10);
 
         // Validate fields
         const errors = {};
@@ -57,6 +64,7 @@ const prodPost = async (req, res) => {
 
         // Create the product object
         const productData = {
+            product_unique_key: Hashed_Productid,
             product_name: checkProductName,
             product_description: checkProductDescription,
             product_price: Number(checkProductPrice), // Ensure it's a number
