@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+</head>
+<body class="bg-[#1a1f2e] text-gray-300">
+    <div class="container mx-auto p-6">
+        <div class="mb-4 border-b border-gray-700">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="productTabs" role="tablist">
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="description-tab" data-tabs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="false">Description</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="reviews-tab" data-tabs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                </li>
+            </ul>
+        </div>
+        <div id="productTabContent">
+            <div class="hidden p-4 rounded-lg" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="lg:col-span-2 space-y-4 text-sm">
+                        <p>
+                            The iMac "M1" 8-Core CPU/8-Core GPU/4 USB-C Shaped Ports (2021) model features a 5-nm
+                            Apple M1 processor with 8 cores (4 performance cores and 4 efficiency cores), an 8-core GPU, a
+                            16-core Neural Engine, 8 GB of onboard RAM, and a 1 TB onboard SSD.
+                        </p>
+                        <p>
+                            This all is housed in a wafer thin aluminum case with flat edges that includes a 23.5" 4480×2520,
+                            218 PPI, LED-backlit, "True Tone" widescreen "Retina 4.5K" display mounted on a svelte
+                            aluminum stand. This specific model is offered in the a two-tone Blue color. It also has an
+                            integrated 1080p FaceTime HD camera, a "studio-quality three-mic array" and a "high-fidelity
+                            six-speaker system" that supports Spatial Audio with Dolby Atmos.
+                        </p>
+                        <p>
+                            Connectivity includes two Thunderbolt / USB 4 ports and two USB 3 ports (all with a USB-C
+                            connector), a 3.5 mm headphone jack conveniently mounted on the left edge of the display, Wi-
+                            Fi 6 (802.11ax), and Bluetooth 5.0.
+                        </p>
+                        <p class="font-bold text-white">
+                            Brilliant 4.5K Retina display: see the big picture and all the details
+                        </p>
+                        <p>
+                            See it all in sharp, glorious detail on the immersive 24-inch 4.5K Retina display, the P3 wide color gamut brings what you're
+                            watching to life in over a billion colors. Images shine with a brilliant 500 nits of brightness.
+                        </p>
+                        <button class="text-blue-400 mt-4 text-sm font-medium">Show more ▼</button>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-[#232936] rounded-lg overflow-hidden">
+                            <div class="bg-[#2b3241] py-3 px-4">
+                                <h3 class="text-white text-lg font-medium">Display</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Screen Type</span>
+                                        <span class="text-white">light</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Diagonal</span>
+                                        <span class="text-white">24 inches</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Resolution</span>
+                                        <span class="text-white">4480 × 2520</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Format</span>
+                                        <span class="text-white">4k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more specification cards here (Processor, RAM memory, Storage) -->
+                    </div>
+                </div>
+            </div>
+            <div class="hidden p-4 rounded-lg" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                <div class="bg-[#232936] rounded-lg p-6 mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h2 class="text-4xl font-bold text-white">5/5</h2>
+                            <p class="text-sm text-gray-400">Average rating</p>
+                            <div class="flex mt-2">
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p class="text-sm text-gray-400 mt-1">(3,657 reviews)</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl font-bold text-white">100M+</h2>
+                            <p class="text-sm text-gray-400">Worldwide Clients</p>
+                            <div class="flex space-x-4 mt-2">
+                                <img src="https://via.placeholder.com/60x24" alt="Ford" class="h-6">
+                                <img src="https://via.placeholder.com/60x24" alt="Visa" class="h-6">
+                                <img src="https://via.placeholder.com/60x24" alt="BMW" class="h-6">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white mb-2">Do you own or have you used the product?</h3>
+                            <p class="text-sm text-gray-400 mb-2">Give your opinion by rating the product</p>
+                            <div class="flex mb-2">
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Write a customer review
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mb-4">
+                    <p class="text-sm">Showing 5,768 Customer Reviews</p>
+                    <div class="flex space-x-2">
+                        <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded text-sm">
+                            All Reviews
+                        </button>
+                        <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded text-sm">
+                            Recently Added
+                        </button>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <!-- Review 1 -->
+                    <div class="border-b border-gray-700 pb-6">
+                        <div class="flex items-center mb-2">
+                            <img class="w-10 h-10 rounded-full mr-3" src="https://via.placeholder.com/40" alt="Michael Gough">
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Michael Gough</h3>
+                                <p class="text-sm text-gray-400">Total Reviews: 34</p>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Fast and reliable</h4>
+                        <div class="flex items-center mb-2">
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46  4.73L5.82 21z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <span class="ml-2 text-sm text-gray-400">November 18 2023 at 15:08</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">My old IMAC was from 2013. This replacement was well needed. Very fast, and the colour matches my office set up perfectly. The display is out of this world and I'm very happy with this purchase.</p>
+                        <div class="flex items-center space-x-4">
+                            <button class="flex items-center text-gray-400 hover:text-white">
+                                <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                Helpful (2)
+                            </button>
+                            <button class="flex items-center text-gray-400 hover:text-white">
+                                <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                                Report
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Add more reviews here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Initialize tabs
+        const tabElements = [
+            {
+                id: 'description',
+                triggerEl: document.querySelector('#description-tab'),
+                targetEl: document.querySelector('#description')
+            },
+            {
+                id: 'reviews',
+                triggerEl: document.querySelector('#reviews-tab'),
+                targetEl: document.querySelector('#reviews')
+            }
+        ];
+
+        const options = {
+            defaultTabId: 'description',
+            activeClasses: 'text-blue-600 hover:text-blue-600 border-blue-600',
+            inactiveClasses: 'text-gray-500 hover:text-gray-600 border-gray-100 hover:border-gray-300',
+            onShow: () => {
+                console.log('tab is shown');
+            }
+        };
+
+        const tabs = new Tabs(tabElements, options);
+        tabs.show('description');
+    </script>
+</body>
+</html>

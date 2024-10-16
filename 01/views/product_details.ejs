@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac Product Page</title>
+    <%- include('cdnLinks')%>
+
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1a1f2e;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #4a5568;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="bg-[#1a1f2e] text-gray-300">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <div class="mb-6 border-b border-gray-700">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="productTabs" role="tablist">
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg transition-colors duration-300" id="description-tab" data-tab-target="description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg transition-colors duration-300" id="reviews-tab" data-tab-target="reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                </li>
+            </ul>
+        </div>
+        <div id="productTabContent" class="custom-scrollbar overflow-y-auto max-h-[calc(100vh-150px)]">
+            <div class="p-4 rounded-lg" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="lg:col-span-2 space-y-4 text-sm">
+                        <p>
+                            The iMac "M1" 8-Core CPU/8-Core GPU/4 USB-C Shaped Ports (2021) model features a 5-nm
+                            Apple M1 processor with 8 cores (4 performance cores and 4 efficiency cores), an 8-core GPU, a
+                            16-core Neural Engine, 8 GB of onboard RAM, and a 1 TB onboard SSD.
+                        </p>
+                        <p>
+                            This all is housed in a wafer-thin aluminum case with flat edges that includes a 23.5" 4480×2520,
+                            218 PPI, LED-backlit, "True Tone" widescreen "Retina 4.5K" display mounted on a svelte
+                            aluminum stand. This specific model is offered in a two-tone Blue color. It also has an
+                            integrated 1080p FaceTime HD camera, a "studio-quality three-mic array" and a "high-fidelity
+                            six-speaker system" that supports Spatial Audio with Dolby Atmos.
+                        </p>
+                        <p>
+                            Connectivity includes two Thunderbolt / USB 4 ports and two USB 3 ports (all with a USB-C
+                            connector), a 3.5 mm headphone jack conveniently mounted on the left edge of the display, Wi-
+                            Fi 6 (802.11ax), and Bluetooth 5.0.
+                        </p>
+                        <p class="font-bold text-white">
+                            Brilliant 4.5K Retina display: see the big picture and all the details
+                        </p>
+                        <p>
+                            See it all in sharp, glorious detail on the immersive 24-inch 4.5K Retina display, the P3 wide color gamut brings what you're
+                            watching to life in over a billion colors. Images shine with a brilliant 500 nits of brightness.
+                        </p>
+                        <button class="text-blue-400 mt-4 text-sm font-medium hover:text-blue-300 transition-colors duration-300">Show more ▼</button>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-[#232936] rounded-lg overflow-hidden">
+                            <div class="bg-[#2b3241] py-3 px-4">
+                                <h3 class="text-white text-lg font-medium">Display</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Screen Type</span>
+                                        <span class="text-white">Light</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Diagonal</span>
+                                        <span class="text-white">24 inches</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Resolution</span>
+                                        <span class="text-white">4480 × 2520</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-400">Format</span>
+                                        <span class="text-white">4K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden p-4 rounded-lg" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                <div class="bg-[#232936] rounded-lg p-6 mb-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h2 class="text-4xl font-bold text-white">5/5</h2>
+                            <p class="text-sm text-gray-400">Average rating</p>
+                            <div class="flex mt-2">
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p class="text-sm text-gray-400 mt-1">(3,657 reviews)</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl font-bold text-white">100M+</h2>
+                            <p class="text-sm text-gray-400">Worldwide Clients</p>
+                            <div class="flex space-x-4 mt-2">
+                                <img src="https://via.placeholder.com/60x24" alt="Ford" class="h-6">
+                                <img src="https://via.placeholder.com/60x24" alt="Visa" class="h-6">
+                                <img src="https://via.placeholder.com/60x24" alt="BMW" class="h-6">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white mb-2">Do you own or have you used the product?</h3>
+                            <p class="text-sm text-gray-400 mb-2">Give your opinion by rating the product</p>
+                            <div class="flex mb-2">
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer transition-colors duration-300" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer transition-colors duration-300" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer transition-colors duration-300" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer transition-colors duration-300" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg class="w-6 h-6 text-gray-600 hover:text-yellow-400 cursor-pointer transition-colors duration-300" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg mt-4 transition-colors duration-300">Write your review</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#2b3241] rounded-lg p-6 text-sm">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img class="w-8 h-8 rounded-full" src="https://via.placeholder.com/40" alt="User">
+                                <span>John Doe</span>
+                            </div>
+                            <span class="text-yellow-400">★★★★★</span>
+                        </div>
+                        <p class="text-gray-300">"This iMac is amazing! The 4.5K Retina display is stunning and the performance is unbeatable."</p>
+                        <div class="flex justify-between items-center">
+                            <button class="flex items-center text-gray-400 hover:text-white transition-colors duration-300">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                                Helpful (2)
+                            </button>
+                            <button class="flex items-center text-gray-400 hover:text-white transition-colors duration-300">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0  00-2 2zm9-13.5V9"></path></svg>
+                                Report
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('[role="tab"]');
+            const tabContents = document.querySelectorAll('[role="tabpanel"]');
+
+            function setActiveTab(tab) {
+                tabs.forEach(t => {
+                    if (t === tab) {
+                        t.setAttribute('aria-selected', 'true');
+                        t.classList.add('text-blue-500', 'border-blue-500');
+                    } else {
+                        t.setAttribute('aria-selected', 'false');
+                        t.classList.remove('text-blue-500', 'border-blue-500');
+                    }
+                });
+
+                const targetId = tab.getAttribute('data-tab-target');
+                tabContents.forEach(content => {
+                    if (content.id === targetId) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => setActiveTab(tab));
+            });
+
+            // Set initial active tab
+            setActiveTab(tabs[0]);
+        });
+    </script>
+</body>
+</html>
