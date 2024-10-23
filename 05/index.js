@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 
 
 app.use(express.json())
-
+app.use(epxress.urlencoded({extended: true}));
 
 app.route("/").get(prodGet).post(multerImage.single('product_image'), prodPost)
 
