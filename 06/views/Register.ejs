@@ -9,10 +9,11 @@
 <body>
     <h2 class="text-center mt-2 mb-2">Register Form</h2>
   <div class="container">
-    <form method="post">
+    <form method="post" action="/register" enctype="multipart/form-data">
         <input type="text" class="form-control mt-4" name="username" placeholder="Enter Username">        
         <input type="email" name="email" class="form-control mt-4" placeholder="Enter Email">
         <input type="text" name="password" class="form-control mt-4" placeholder="Enter Password">
+        <input type="file" name="user_image" class="form-control mt-4" placeholder="Upload Image">
         <input type="submit" name="submitBtn" value="Register" class="btn btn-success mt-4"> 
 
     </form>
